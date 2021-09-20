@@ -1,5 +1,5 @@
 # Template Admin
-Template Front-end para Painéis de administração e dashboards
+Template Front-end para Painéis de administração e dashboards.
 ## Recursos utilizados
 HTML, CSS e JS com framework BOOTSTRAP 5
 
