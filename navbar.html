@@ -22,8 +22,56 @@
 <body>
   <div class="container tela-cheia">
 
-    <!-- conteúdo aqui -->    
-    Navbar
+    <!-- COMPONENTE NAVBAR -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primaria fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/logotipo.png" width="50"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-principal"
+              aria-controls="menu-principal" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu-principal">
+              <div class="navbar-nav">
+                <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                  <li>
+                    <a href="#" class="nav-link text-secondary">
+                      <span class="d-block text-center"><i class="bi bi-house"></i></span>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <span class="d-block text-center"><i class="bi bi-house"></i></span>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
+                      Orders
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>
+                      Products
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link text-white">
+                      <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>
+                      Customers
+                    </a>
+                  </li>
+                </ul>
+                
+              </div>
+          </div>
+        </div>
+    </nav>
+    <!-- final COMPONENTE NAVBAR -->
+
   </div>
 
 </body>
