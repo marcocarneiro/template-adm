@@ -194,3 +194,10 @@ input[type=button], input[type=submit], input[type=reset]  {
     box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
     text-align: center;
 }
+
+
+@media only screen and (max-width: 768px) {
+  #menu-principal .navbar-nav .nav{
+    display: block;
+  }
+}

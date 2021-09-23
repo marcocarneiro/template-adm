@@ -9,12 +9,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/bootstrap.min.css">
+
 
   <!-- ABCDiverte CSS -->
   <link rel="stylesheet" href="assets/styles.css">
@@ -23,56 +22,62 @@
   <div class="container tela-cheia">
 
     <!-- COMPONENTE NAVBAR -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primaria fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="assets/logotipo.png" width="50"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-principal"
-              aria-controls="menu-principal" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="menu-principal">
-              <div class="navbar-nav">
-                <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
-                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                  <li>
-                    <a href="#" class="nav-link text-secondary">
-                      <span class="d-block text-center"><i class="bi bi-house"></i></span>
-                      Home
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <span class="d-block text-center"><i class="bi bi-house"></i></span>
-                      Home
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
-                      Orders
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"></use></svg>
-                      Products
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>
-                      Customers
-                    </a>
-                  </li>
-                </ul>
-                
-              </div>
-          </div>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primaria">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/logotipo.png" width="50"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-around" id="navbarCollapse">
+          <ul class="navbar-nav mb-2 mb-md-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-secondary">
+                <span class="d-lg-block text-center"><i class="fa fa-home" aria-hidden="true"></i></span>
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">
+                <span class="d-lg-block text-center"><i class="fa fa-users" aria-hidden="true"></i></span>
+                Cadastro de turmas
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">
+                <span class="d-lg-block text-center"><i class="fas fa-graduation-cap"></i></span>
+                Cadastro de professores
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">
+                <span class="d-lg-block text-center"><i class="fas fa-book-reader"></i></span>
+                Cadastro de alunos
+              </a>
+            </li>            
+          </ul>
+
+          <ul class="navbar-nav mb-2 mb-md-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Newgestão</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dadosuser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://avatars.githubusercontent.com/u/12050992?s=20&amp;v=4" alt="Nome do usuário" width="32" height="32" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark mr-5" aria-labelledby="dadosuser">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>           
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- final COMPONENTE NAVBAR -->
 
   </div>
 
+  <script src="assets/bootstrap.bundle.min.js"></script>
 </body>
 </html>
