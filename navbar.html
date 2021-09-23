@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <div class="container tela-cheia">
+  <div class="container tela-cheia align-items-end">
 
     <!-- COMPONENTE NAVBAR -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primaria">
@@ -65,9 +65,11 @@
                 <img src="https://avatars.githubusercontent.com/u/12050992?s=20&amp;v=4" alt="Nome do usuário" width="32" height="32" class="rounded-circle">
               </a>
               <ul class="dropdown-menu dropdown-menu-dark mr-5" aria-labelledby="dadosuser">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item border-bottom border-secondary" href="#">Seus dados</a></li>
+                <li><a class="dropdown-item border-bottom border-secondary" href="#">Opção 2</a></li>
+                <li><a class="dropdown-item border-bottom border-secondary" href="#">Opção 3</a></li>
+                <li><a class="dropdown-item border-bottom border-secondary" href="#">Opção 4</a></li>
+                <li><a class="dropdown-item item-sair" href="#">Sair</a></li>
               </ul>
             </li>           
           </ul>
@@ -75,9 +77,14 @@
       </div>
     </nav>
     <!-- final COMPONENTE NAVBAR -->
+    
 
   </div>
 
+  <!-- COMPONENTE RODAPÉ (vazio, preenchido dinamicamente) -->
+  <footer id="rodape-docto" class="p-2 mt-5 border-top text-center"></footer>
+  
   <script src="assets/bootstrap.bundle.min.js"></script>
+  <script src="assets/code.js"></script>
 </body>
 </html>
