@@ -19,12 +19,188 @@
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <div class="container tela-cheia">
+  <div class="container tela-cheia align-items-end">
 
-    <!-- conteúdo aqui -->
-    Dashboard  
+    <!-- COMPONENTE NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primaria">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/logotipo.png" width="50"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-around" id="navbarCollapse">
+          <ul class="navbar-nav mb-2 mb-md-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-secondary">
+                <span class="d-lg-block text-center"><i class="fa fa-home" aria-hidden="true"></i></span>
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">
+                <span class="d-lg-block text-center"><i class="fa fa-users" aria-hidden="true"></i></span>
+                Cadastro de turmas
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">
+                <span class="d-lg-block text-center"><i class="fas fa-graduation-cap"></i></span>
+                Cadastro de professores
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">
+                <span class="d-lg-block text-center"><i class="fas fa-book-reader"></i></span>
+                Cadastro de alunos
+              </a>
+            </li>            
+          </ul>
+
+          <ul class="navbar-nav mb-2 mb-md-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white">Newgestão</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dadosuser" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://avatars.githubusercontent.com/u/12050992?s=20&amp;v=4" alt="Nome do usuário" width="32" height="32" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark mr-5" aria-labelledby="dadosuser">
+                <li><a class="dropdown-item border-bottom border-secondary" href="#">Seus dados</a></li>
+                <li><a class="dropdown-item border-bottom border-secondary" href="#">Opção 2</a></li>
+                <li><a class="dropdown-item border-bottom border-secondary" href="#">Opção 3</a></li>
+                <li><a class="dropdown-item border-bottom border-secondary" href="#">Opção 4</a></li>
+                <li><a class="dropdown-item item-sair" href="#">Sair</a></li>
+              </ul>
+            </li>           
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- final COMPONENTE NAVBAR -->
+
+    <!-- COMPONENTE TABS -->
+    <ul class="nav nav-tabs" id="tabs-dashboard" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#formulario1" role="tab" aria-controls="home" aria-selected="true">Formulário 1</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#formulario2" role="tab" aria-controls="profile" aria-selected="false">Formulário 2</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#formulario3" role="tab" aria-controls="contact" aria-selected="false">Formulário 3</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="tabs-conteudo">
+      <div class="tab-pane fade show active p-3" id="formulario1" role="tabpanel" aria-labelledby="home-tab">
+        <h2>Formulário 1</h2>
+        <form>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+
+      <div class="tab-pane fade p-3" id="formulario2" role="tabpanel" aria-labelledby="profile-tab">
+        <h2>Formulário 2</h2>
+        <form>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="check1" checked>
+            <label class="form-check-label" for="check1">
+              Checkbox Default
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="check2">
+            <label class="form-check-label" for="check2">
+              Checkbox 2
+            </label>
+          </div>
+        </form>     
+      </div>
+
+      <div class="tab-pane fade p-3" id="formulario3" role="tabpanel" aria-labelledby="contact-tab">
+        <h2>Formulário 3</h2> 
+        <form>
+          <select class="form-select" aria-label="Exemplo select">
+            <option selected>Escolha uma opção</option>
+            <option value="1">Opção 1</option>
+            <option value="2">Opção 2</option>
+            <option value="3">Opção 3</option>
+          </select>
+        </form>       
+      </div>
+    </div>
+    <!-- final COMPONENTE TABS -->
     
+    <!-- COMPONENTE TABELA -->
+    <div class="bd-example">
+      <table class="table table-hover table-striped">
+          <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Sobrenome</th>
+          <th scope="col">Nome de guerra</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Mario</td>
+          <td>da Silva</td>
+          <td>@mario</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Tony</td>
+          <td>Stark</td>
+          <td>@homemdeferro</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>Bruce</td>
+          <td>Banner</td>
+          <td>@hulk</td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>Natasha</td>
+          <td>Romanova</td>
+          <td>@viuvanegra</td>
+        </tr>         
+      </tbody>    
+      </table>
+    </div>
+    <!-- final COMPONENTE TABELA -->
+
   </div>
 
+  <!-- COMPONENTE RODAPÉ (vazio, preenchido dinamicamente JS) -->
+  <footer id="rodape-docto" class="p-2 mt-5 border-top text-center"></footer>
+  
+  <script src="assets/bootstrap.bundle.min.js"></script>
+  <script src="assets/code.js"></script>
 </body>
 </html>
