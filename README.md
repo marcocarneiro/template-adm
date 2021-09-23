@@ -1,5 +1,7 @@
 # Template Admin
 Template Front-end para Painéis de administração e dashboards, utiliza Bootstrap 5 como base inicial e algumas regras CSS para personalização. Pode-se utilizar essa estrutura para vários projetos de sites de área de administração, basta modificar os valores das cores no arquivo assets/styles.css e alterar as imagens dentro da pasta assets.
+Os códigos possuem comentários indicando o início e final dos componentes demonstrados.
+
 ## Recursos utilizados
 HTML, CSS e JS com framework BOOTSTRAP 5, documentação e exemplos de componentes em https://getbootstrap.com/docs/5.0/getting-started/introduction/
 
