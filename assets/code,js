@@ -1,1 +1,8 @@
-//Custom JS scripts
+//Rodapé
+(function(){               
+    var agora = new Date;
+    var anoAtual = agora.getFullYear();
+    var texto = '<small>&copy; ' + anoAtual + ' - Desenvolvido por NEWGESTÃO</small>';
+    var el = document.getElementById('rodape-docto');
+    el.innerHTML = texto;
+})();
